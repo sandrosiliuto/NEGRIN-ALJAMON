@@ -20,36 +20,21 @@ export default function Gallery({ lang }: GalleryProps) {
 
   const images = [
     {
-      url: 'https://images.unsplash.com/photo-1511216173041-697917289ab0?auto=format&fit=crop&q=80&w=800',
-      title: 'Maestría en el Plato',
-      desc: 'Composiciones artísticas sutiles y elegantes.',
+      url: 'https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/galeria1.jpeg?raw=true',
+      title: 'Maestría en el Corte',
+      desc: 'Precisión absoluta en cada movimiento.',
       colSpan: 'md:col-span-2'
     },
     {
-      url: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800',
-      title: 'Maridaje Perfecto',
-      desc: 'El mejor vino tinto para acompañar el ibérico.'
+      url: 'https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/galeria2.jpeg?raw=true',
+      title: 'Selección Premium',
+      desc: 'Piezas exclusivas de bellota 100% ibéricas.'
     },
     {
-      url: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=800',
-      title: 'Jamón de Bellota',
-      desc: 'Calidad 100% ibérica seleccionada.'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800',
-      title: 'Eventos Exclusivos',
-      desc: 'Presencia impecable en cada celebración.',
-      colSpan: 'md:col-span-2'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1628103130541-2b62d31e9c20?auto=format&fit=crop&q=80&w=800',
-      title: 'Veteado de Oro',
-      desc: 'Textura y sabor inconfundibles.'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1541329164087-02830319ca03?auto=format&fit=crop&q=80&w=800',
-      title: 'Corte a Cuchillo',
-      desc: 'Show en vivo de precisión absoluta.'
+      url: 'https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/galeria3.jpeg?raw=true',
+      title: 'Arte Gastronómico',
+      desc: 'Presentación impecable para eventos de lujo.',
+      colSpan: 'md:col-span-3'
     }
   ];
 
