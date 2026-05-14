@@ -25,13 +25,13 @@ export default function Services({ lang }: ServicesProps) {
     gsap.from(cards, {
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top 80%',
+        start: 'top 85%',
       },
-      y: 100,
+      y: 60,
       opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: 'back.out(1.7)'
+      duration: 0.6,
+      stagger: 0.1,
+      ease: 'power3.out'
     });
   }, []);
 
@@ -58,8 +58,8 @@ export default function Services({ lang }: ServicesProps) {
 
   return (
     <section id="services" ref={sectionRef} className="bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 pt-24">
-        <div className="text-center mb-20">
+      <div className="max-w-7xl mx-auto px-6 pt-20">
+        <div className="text-center mb-16">
           <div className="inline-flex items-center space-x-2 text-accent font-bold tracking-widest uppercase mb-4">
             <Award className="w-5 h-5" />
             <span>Maestría Ibérica</span>
@@ -69,7 +69,7 @@ export default function Services({ lang }: ServicesProps) {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 mb-16">
           {services.map((service, i) => (
             <div 
               key={i}
@@ -101,7 +101,7 @@ export default function Services({ lang }: ServicesProps) {
       </div>
 
       {/* Decorative Full Width Image */}
-      <div className="w-full mt-0 mb-24">
+      <div className="w-full mb-20">
         <img 
           src="https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/jamon.png?raw=true" 
           alt="Jamón Ibérico" 
@@ -109,7 +109,7 @@ export default function Services({ lang }: ServicesProps) {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 pb-24">
+      <div className="max-w-7xl mx-auto px-6 pb-20">
         {/* Pricing Table Section */}
         <div className="">
           <div className="text-center mb-12">
