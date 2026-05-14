@@ -98,6 +98,66 @@ export default function Services({ lang }: ServicesProps) {
             </div>
           ))}
         </div>
+
+        {/* Pricing Table Section */}
+        <div className="mt-32">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-display font-bold text-primary tracking-tight">
+              {t.pricingTitle}
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            {/* Ham Types */}
+            <div className="bg-beige p-8 md:p-12 rounded-[2.5rem] border border-primary/5">
+              <h3 className="text-2xl font-bold mb-8 text-maroon flex items-center">
+                <span className="w-8 h-[2px] bg-maroon mr-4" />
+                Variedades de Jamón
+              </h3>
+              <div className="space-y-6">
+                {(t.hams as any[]).map((ham, idx) => (
+                  <div key={idx} className="flex justify-between items-start border-b border-primary/10 pb-4">
+                    <div className="max-w-[70%]">
+                      <div className="font-bold text-primary">{ham.name}</div>
+                      {ham.note && <div className="text-sm text-primary/60 italic">{ham.note}</div>}
+                    </div>
+                    <div className="text-xl font-display font-bold text-accent whitespace-nowrap">
+                      {ham.price}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Service Rates */}
+            <div className="space-y-8">
+              <div className="bg-primary text-white p-8 md:p-12 rounded-[2.5rem]">
+                <h3 className="text-2xl font-bold mb-8 text-accent flex items-center">
+                  <span className="w-8 h-[2px] bg-accent mr-4" />
+                  Tarifas de Servicio
+                </h3>
+                <div className="space-y-10">
+                  {(t.serviceRates as any[]).map((rate, idx) => (
+                    <div key={idx} className="space-y-2">
+                      <div className="text-accent font-bold uppercase tracking-widest text-sm">{rate.zone}</div>
+                      <div className="flex justify-between items-baseline">
+                        <div className="text-3xl font-display font-bold">{rate.rate}</div>
+                      </div>
+                      <div className="text-white/60 text-sm font-medium">{rate.additional}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Note about IGIC */}
+              <div className="p-8 rounded-3xl border border-dashed border-primary/20 bg-beige/30">
+                <p className="text-sm text-primary/60 italic">
+                  * Los precios de servicio no incluyen IGIC. Se aplicará el tipo impositivo correspondiente según la normativa vigente en las Islas Canarias.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

@@ -33,6 +33,19 @@ export const translations = {
         title: 'Catas y Formación',
         desc: 'Experiencias privadas para aprender el arte del corte y degustar las mejores piezas.',
       },
+      pricingTitle: 'Nuestros Jamones y Tarifas',
+      hams: [
+        { name: 'Jamón bellota 100% raza ibérica', price: '46,90€/kg', note: '(Piezas de 8 a 10 kg)' },
+        { name: 'Jamón bellota 50% raza ibérica', price: '41,50€/kg' },
+        { name: 'Jamón cebo campo 50% raza ibérica', price: '29,00€/kg' },
+        { name: 'Jamón cebo 50% raza ibérica', price: '27,00€/kg' },
+        { name: 'Jamón duroc gran reserva', price: '20,00€/kg' },
+        { name: 'Jamón serrano gran reserva', price: '14,60€/kg' },
+      ],
+      serviceRates: [
+        { zone: 'Zona Sur de la isla', rate: '180€ + IGIC', additional: '+100€ por jamón adicional' },
+        { zone: 'Zona Norte y Santa Cruz - Laguna', rate: '230€ + IGIC', additional: '+100€ por jamón adicional' },
+      ]
     },
     about: {
       title: 'Maestro Cortador',

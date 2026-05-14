@@ -27,8 +27,8 @@ export default function About({ lang }: AboutProps) {
             <div className="absolute -top-10 -left-10 w-40 h-40 bg-accent/10 rounded-full blur-3xl" />
             <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=800" 
-                alt="Professional Ham Cutter"
+                src="https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/kevincortando.png?raw=true" 
+                alt="Maestro Cortador - Kevin"
                 className="w-full h-auto aspect-[4/5] object-cover"
               />
             </div>

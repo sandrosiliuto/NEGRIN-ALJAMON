@@ -20,36 +20,36 @@ export default function Gallery({ lang }: GalleryProps) {
 
   const images = [
     {
+      url: 'https://images.unsplash.com/photo-1511216173041-697917289ab0?auto=format&fit=crop&q=80&w=800',
+      title: 'Maestría en el Plato',
+      desc: 'Composiciones artísticas sutiles y elegantes.',
+      colSpan: 'md:col-span-2'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&q=80&w=800',
+      title: 'Maridaje Perfecto',
+      desc: 'El mejor vino tinto para acompañar el ibérico.'
+    },
+    {
       url: 'https://images.unsplash.com/photo-1544077960-604201fe74bc?auto=format&fit=crop&q=80&w=800',
-      title: 'Arte en cada loncha',
-      desc: 'Corte artesanal a cuchillo por expertos.',
+      title: 'Jamón de Bellota',
+      desc: 'Calidad 100% ibérica seleccionada.'
+    },
+    {
+      url: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800',
+      title: 'Eventos Exclusivos',
+      desc: 'Presencia impecable en cada celebración.',
       colSpan: 'md:col-span-2'
     },
     {
       url: 'https://images.unsplash.com/photo-1628103130541-2b62d31e9c20?auto=format&fit=crop&q=80&w=800',
-      title: 'Veteado Único',
-      desc: 'Selección de las mejores piezas 100% ibéricas.'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1628103130539-803fac599424?auto=format&fit=crop&q=80&w=800',
-      title: 'Presentación Gourmet',
-      desc: 'Estética y sabor en perfecta armonía.'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1511216173041-697917289ab0?auto=format&fit=crop&q=80&w=800',
-      title: 'Eventos Corporativos',
-      desc: 'Presencia y profesionalidad en tu stand.',
-      colSpan: 'md:col-span-2'
+      title: 'Veteado de Oro',
+      desc: 'Textura y sabor inconfundibles.'
     },
     {
       url: 'https://images.unsplash.com/photo-1541329164087-02830319ca03?auto=format&fit=crop&q=80&w=800',
-      title: 'Show Gastronómico',
-      desc: 'Un espectáculo inolvidable para tus invitados.'
-    },
-    {
-      url: 'https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&q=80&w=800',
-      title: 'Bodas de Ensueño',
-      desc: 'El toque de distinción que tu boda merece.'
+      title: 'Corte a Cuchillo',
+      desc: 'Show en vivo de precisión absoluta.'
     }
   ];
 
