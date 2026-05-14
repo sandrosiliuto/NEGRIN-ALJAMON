@@ -24,14 +24,14 @@ export default function Services({ lang }: ServicesProps) {
     
     gsap.from(cards, {
       scrollTrigger: {
-        trigger: sectionRef.current,
-        start: 'top 80%',
+        trigger: '.cards-grid',
+        start: 'top 85%',
       },
-      y: 100,
+      y: 50,
       opacity: 0,
-      duration: 1,
-      stagger: 0.2,
-      ease: 'back.out(1.7)'
+      duration: 0.8,
+      stagger: 0.1,
+      ease: 'power2.out'
     });
   }, []);
 
@@ -57,23 +57,32 @@ export default function Services({ lang }: ServicesProps) {
   ];
 
   return (
-    <section id="services" ref={sectionRef} className="py-24 px-6 bg-white overflow-hidden">
-      <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-20">
-          <div className="inline-flex items-center space-x-2 text-accent font-bold tracking-widest uppercase mb-4">
-            <Award className="w-5 h-5" />
-            <span>Maestría Ibérica</span>
-          </div>
-          <h2 className="text-4xl md:text-6xl font-display font-bold text-primary tracking-tight">
-            {t.title}
-          </h2>
+    <section id="services" ref={sectionRef} className="bg-white overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 pt-24 text-center">
+        <div className="inline-flex items-center space-x-2 text-accent font-bold tracking-widest uppercase mb-4">
+          <Award className="w-5 h-5" />
+          <span>Maestría Ibérica</span>
         </div>
+        <h2 className="text-4xl md:text-7xl font-display font-bold text-primary tracking-tighter leading-none mb-8">
+          {t.title}
+        </h2>
+      </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      {/* Decorative Full Width Image - Moved here right under title */}
+      <div className="w-full mb-16 shadow-2xl">
+        <img 
+          src="https://github.com/sandrosiliuto/NEGRIN-ALJAMON/blob/main/jamon.png?raw=true" 
+          alt="Jamón Ibérico" 
+          className="w-full h-auto object-cover"
+        />
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 mb-32">
+        <div className="cards-grid grid grid-cols-1 md:grid-cols-3 gap-10">
           {services.map((service, i) => (
             <div 
               key={i}
-              className="service-card group relative p-10 rounded-3xl bg-beige border border-primary/5 transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden"
+              className="service-card group relative p-10 rounded-[2.5rem] bg-beige border border-primary/5 transition-all duration-500 hover:-translate-y-4 hover:shadow-2xl hover:shadow-primary/10 overflow-hidden"
             >
               {/* Background Decoration */}
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-bl-full -mr-10 -mt-10 group-hover:scale-150 transition-transform duration-700" />
@@ -98,11 +107,13 @@ export default function Services({ lang }: ServicesProps) {
             </div>
           ))}
         </div>
+      </div>
 
+      <div className="max-w-7xl mx-auto px-6 pb-24">
         {/* Pricing Table Section */}
-        <div className="mt-32">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-display font-bold text-primary tracking-tight">
+        <div className="">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-6xl font-display font-bold text-primary tracking-tighter">
               {t.pricingTitle}
             </h2>
           </div>
